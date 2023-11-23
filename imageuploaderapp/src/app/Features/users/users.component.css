@@ -1,0 +1,25 @@
+.users-page {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-list-container {
+  height: 80%;
+  width: 70%;
+  background-color: rgb(8, 8, 61);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

@@ -1,0 +1,10 @@
+<div class="user-card">
+    <div class="img-container">
+        <img class="profile-image" *ngIf="user.profileimage" [src]="proimg" alt="">
+        <img class="profile-image" *ngIf="!user.profileimage" [src]="'https://banffventureforum.com/wp-content/uploads/2019/08/no-photo-icon-22.png'" alt="">
+    </div>
+    <div class="user-info">
+        <h3>{{user.name}}</h3>
+        <h3>{{user.username}}</h3>
+    </div>
+</div>

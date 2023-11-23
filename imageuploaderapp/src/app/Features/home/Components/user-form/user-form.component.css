@@ -1,6 +1,7 @@
 .userform-contianer {
-    height: 50rem;
-    width: 50rem;
+    position: relative;
+    width:calc(100vw / 2);
+   height:calc(100vw / 2);
     background-color: rgb(68, 68, 88);
     border-radius: 50%;
     border-style: solid;
@@ -10,10 +11,94 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    left: 25%;
+    height: 30%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-style: none;
+}
+
+.img-ele {
+    height: 80%;
+    width: auto;
+
+}
+
+.form-basic-info-container {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.input-boxes {
+    position: relative;
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.form-input-box-container {
+    position: relative;
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(34, 24, 87);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-input-label {
+    height: 50%;
+    width: 99%;
+    background-color: transparent;
 }
 
 .form-input-box {
-    height: 10%;
-    width: 80%;
+    height: 50%;
+    width: 99%;
+    background-color: seashell;
+}
+
+.button-container {
+    height: 30%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submit-btn {
+    height: 25%;
+    width: 30%;
+    background-color: rgb(34, 24, 87);
+    color: aliceblue;
+    border-radius: 25%;
+    border-style: solid;
+    border-width: thin;
+    border-color: blue;
 }

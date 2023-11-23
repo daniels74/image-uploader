@@ -1,7 +1,18 @@
 <form class="userform-contianer" [formGroup]="userform" (ngSubmit)="submitUserForm()">
 
-    <input class="form-input-box" type="text" [formControlName]="'name'">
-    <input class="form-input-box" type="text" [formControlName]="'username'" name="" id="">
-    <button type="submit">Submit</button>
+    <button class="img-container" (click)="useCopresserOnImage()">
+        <img class="img-ele" [src]="myimage" *ngIf="myimage" alt="">
+        <img class="img-ele" [src]="'https://banffventureforum.com/wp-content/uploads/2019/08/no-photo-icon-22.png'"
+            *ngIf="!myimage" alt="">
+    </button>
+    <div class="form-basic-info-container">
+        <div class="input-boxes">
+            <label class="form-input-box-container" for="name"><h3 class="form-input-label">Name</h3><input class="form-input-box" type="text" [formControlName]="'name'"></label>
+            <label class="form-input-box-container" for="username"><h3 class="form-input-label">Username</h3><input class="form-input-box" type="text" [formControlName]="'username'" name="" id=""></label>
+        </div>
+        <div class="button-container">
+            <button class="submit-btn" type="submit">Submit</button>
+        </div>
+    </div>
 
 </form>

@@ -1,1 +1,17 @@
-<router-outlet />
+<div [ngStyle]="{
+    height: '100vh',
+    width: '100vw',
+}">
+    <div [ngStyle]="{
+    height: '10vh',
+    width:'100vw',
+}">
+        <app-navbar />
+    </div>
+    <div [ngStyle]="{
+        height: '90vh',
+        width:'100vw',
+    }">
+        <router-outlet />
+    </div>
+</div>
