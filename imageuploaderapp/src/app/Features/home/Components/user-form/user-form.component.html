@@ -1,0 +1,7 @@
+<form class="userform-contianer" [formGroup]="userform" (ngSubmit)="submitUserForm()">
+
+    <input class="form-input-box" type="text" [formControlName]="'name'">
+    <input class="form-input-box" type="text" [formControlName]="'username'" name="" id="">
+    <button type="submit">Submit</button>
+
+</form>
